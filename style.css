@@ -97,12 +97,12 @@ h6 {
 
 @media (max-width: 640px) {
   .section-header h2 {
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 15px;
   }
 
   .section-header span {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -115,21 +115,13 @@ h6 {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
-.card-title {
-  padding: 20px 0 15px 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #012970;
-  font-family: "Poppins", sans-serif;
-}
-
 .card-body {
   padding: 0 20px 20px 20px;
 }
 
 .card-title {
   padding: 20px 0 15px 0;
-  font-size: 21px;
+  font-size: 17px;
   font-weight: 500;
   color: #012970;
   font-family: "Poppins", sans-serif;
@@ -142,19 +134,19 @@ h6 {
 }
 
 /*bookshelf*/
-.dashboard .bookshelf {
-  font-size: 14px;
+.bookshelf {
+  font-size: 13px;
 }
 
-.dashboard .bookshelf .table thead {
+.bookshelf .table thead {
   background: #f6f6fe;
 }
 
-.dashboard .bookshelf .table thead th {
+.bookshelf .table thead th {
   border: 0;
 }
 
-.dashboard .bookshelf .table tbody td {
+.bookshelf .table tbody td {
   vertical-align: middle;
 }
 

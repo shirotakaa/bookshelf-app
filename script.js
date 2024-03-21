@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
             moveBook(+id);
         }
     });
-    
   
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -99,36 +98,36 @@ document.addEventListener("DOMContentLoaded", function () {
             deleteBook(+id);
         }   
     });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchInput = document.getElementById('search');
-        const belumDibacaTable = document.getElementById('belumdibaca');
-        const selesaiDibacaTable = document.getElementById('selesaidibaca');
-    
-        searchInput.addEventListener('input', function () {
-          const searchTerm = this.value.toLowerCase();
-    
-          searchInTable(belumDibacaTable, searchTerm);
-          searchInTable(selesaiDibacaTable, searchTerm);
-        });
-    
-        function searchInTable(table, term) {
-          const rows = table.querySelectorAll('tbody tr');
-    
-          rows.forEach(row => {
-            const title = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
-            const author = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
-            const year = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
-    
-            if (title.includes(term) || author.includes(term) || year.includes(term)) {
-              row.style.display = '';
-            } else {
-              row.style.display = 'none';
-            }
-          });
-        }
-      });
     
     renderBooks();
   });
   
+/*search*/
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('search');
+  const belumDibacaTable = document.getElementById('belumdibaca');
+  const selesaiDibacaTable = document.getElementById('selesaidibaca');
+
+  searchInput.addEventListener('input', function () {
+    const searchTerm = this.value.toLowerCase();
+
+    searchInTable(belumDibacaTable, searchTerm);
+    searchInTable(selesaiDibacaTable, searchTerm);
+  });
+
+  function searchInTable(table, term) {
+    const rows = table.querySelectorAll('tbody tr');
+
+    rows.forEach(row => {
+      const title = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+      const author = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+      const year = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+
+      if (title.includes(term) || author.includes(term) || year.includes(term)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+}); 

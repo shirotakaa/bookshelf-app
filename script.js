@@ -130,8 +130,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-<<<<<<< HEAD
 }); 
-=======
-}); 
->>>>>>> b4cf409351385d5666775a206537abd87aa29606
